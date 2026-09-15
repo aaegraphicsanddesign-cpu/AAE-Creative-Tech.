@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AAE Creative and Tech</title>
+
+  <meta name="description"
+    content="AAE Creative and Tech - Graphics Design, Video Editing, Animation, Web Design and Digital Creative Services.">
+
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #e11d2e;
+  --blue: #1264e8;
+  --yellow: #ffc107;
+  --dark: #0b0f19;
+  --dark2: #111827;
+  --light: #f5f7fb;
+  --white: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  background: var(--dark);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    var(--red),
+    var(--blue)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid var(--yellow);
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.brand span {
+  color: var(--yellow);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav button {
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(18,100,232,0.35),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(225,29,46,0.25),
+      transparent 35%
+    ),
+    var(--dark);
+
+  color: white;
+  padding: 85px 20px 90px;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,193,7,0.12);
+  color: var(--yellow);
+  border: 1px solid rgba(255,193,7,0.4);
+  padding: 7px 15px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 70px);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: var(--yellow);
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #d1d5db;
+  font-size: 18px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--dark);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 20px;
+}
+
+section {
+  margin-bottom: 75px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  color: var(--muted);
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 20px 16px 48px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.search-box input:focus {
+  border-color: var(--blue);
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 19px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.09);
+}
+
+.service-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  background: #eef2ff;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+
+/* =========================
+   COURSES
+========================= */
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-top {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  background: linear-gradient(
+    135deg,
+    var(--blue),
+    #183b9b
+  );
+}
+
+.course-card:nth-child(2) .course-top {
+  background: linear-gradient(
+    135deg,
+    var(--red),
+    #9d101c
+  );
+}
+
+.course-card:nth-child(3) .course-top {
+  background: linear-gradient(
+    135deg,
+    #f59e0b,
+    #d97706
+  );
+}
+
+.course-content {
+  padding: 22px;
+}
+
+.course-content h3 {
+  margin-bottom: 8px;
+}
+
+.course-content p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.course-link {
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* =========================
+   LESSON
+========================= */
+
+#lessonSection {
+  display: none;
+}
+
+.lesson-container {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.lesson-header {
+  margin-bottom: 25px;
+}
+
+.lesson-header h2 {
+  margin-bottom: 6px;
+}
+
+.lesson-header p {
+  color: var(--muted);
+}
+
+.progress-area {
+  margin-bottom: 30px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.progress-bar {
+  height: 9px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--red),
+    var(--blue)
+  );
+  transition: width 0.3s;
+}
+
+.lesson-content {
+  min-height: 240px;
+  padding: 25px;
+  border-radius: 12px;
+  background: #f8fafc;
+  margin-bottom: 25px;
+}
+
+.lesson-content h3 {
+  margin-bottom: 15px;
+}
+
+.lesson-content p {
+  margin-bottom: 14px;
+}
+
+.lesson-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.lesson-btn {
+  border: none;
+  background: var(--dark);
+  color: white;
+  padding: 11px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lesson-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box {
+  background: var(--dark);
+  color: white;
+  border-radius: 18px;
+  padding: 45px 30px;
+  text-align: center;
+}
+
+.about-box h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  max-width: 750px;
+  margin: auto;
+  color: #d1d5db;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  text-align: center;
+  padding: 55px 25px;
+  background: linear-gradient(
+    135deg,
+    var(--red),
+    var(--blue)
+  );
+  color: white;
+  border-radius: 18px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  margin-bottom: 25px;
+}
+
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: var(--dark);
+  color: white;
+  padding: 45px 20px 25px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+footer h3 {
+  margin-bottom: 12px;
+}
+
+footer p,
+footer a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a {
+  display: block;
+  margin-bottom: 7px;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.copyright {
+  max-width: 1100px;
+  margin: 35px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #273142;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+  .services,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .brand {
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--dark);
+    padding: 12px;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav button {
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero {
+    padding: 65px 18px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 45px 15px;
+  }
+
+  .services,
+  .courses {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-container {
+    padding: 20px;
+  }
+
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="navbar">
+
+      <div class="logo-area">
+
+        <div class="logo">
+          AAE
+        </div>
+
+        <div class="brand">
+          AAE <span>CREATIVE</span><br>
+          AND TECH
+        </div>
+
+      </div>
+
+      <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <nav id="navMenu">
+
+        <button onclick="showSection('home')">
+          Home
+        </button>
+
+        <button onclick="showSection('services')">
+          Services
+        </button>
+
+        <button onclick="showSection('courses')">
+          Courses
+        </button>
+
+        <button onclick="showSection('about')">
+          About
+        </button>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+  <div class="hero" id="home">
+
+    <div class="hero-container">
+
+      <div class="badge">
+        🚀 Creativity • Technology • Skills
+      </div>
+
+      <h1>
+        Create. Learn.<br>
+        <span>Grow.</span>
+      </h1>
+
+      <p>
+        Welcome to AAE Creative and Tech — a platform
+        for graphics design, video editing, animation,
+        technology and digital creativity.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#services" class="btn btn-primary">
+          Explore Services
+        </a>
+
+        <a href="#courses" class="btn btn-secondary">
+          Start Learning
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MAIN -->
+  <main>
+
+
+    <!-- SEARCH -->
+    <section>
+
+      <div class="search-box">
+
+        <span class="search-icon">
+          🔎
+        </span>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search services and courses..."
+          onkeyup="searchContent()">
+
+      </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="services">
+
+      <div class="section-title">
+
+        <h2>Our Services</h2>
+
+        <p>
+          Creative and digital solutions for
+          individuals, businesses and brands.
+        </p>
+
+      </div>
+
+
+      <div class="services">
+
+
+        <div class="service-card searchable">
+
+          <div class="service-icon">
+            🎨
+          </div>
+
+          <h3>
+            Graphics Design
+          </h3>
+
+          <p>
+            Professional flyers, logos, banners,
+            business cards, social media designs
+            and promotional materials.
+          </p>
+
+        </div>
+
+
+        <div class="service-card searchable">
+
+          <div class="service-icon">
+            🎬
+          </div>
+
+          <h3>
+            Video Editing
+          </h3>
+
+          <p>
+            Creative video editing for adverts,
+            social media content, events and
+            businesses.
+          </p>
+
+        </div>
+
+
+        <div class="service-card searchable">
+
+          <div class="service-icon">
+            ✨
+          </div>
+
+          <h3>
+            Animation
+          </h3>
+
+          <p>
+            Engaging animations, motion graphics,
+            intros, promotional videos and
+            animated presentations.
+          </p>
+
+        </div>
+
+
+        <div class="service-card searchable">
+
+          <div class="service-icon">
+            🌐
+          </div>
+
+          <h3>
+            Web Design
+          </h3>
+
+          <p>
+            Modern responsive websites for
+            businesses, personal brands,
+            portfolios and online services.
+          </p>
+
+        </div>
+
+
+        <div class="service-card searchable">
+
+          <div class="service-icon">
+            📱
+          </div>
+
+          <h3>
+            Social Media Design
+          </h3>
+
+          <p>
+            Professional social media posters,
+            advertisements and branded content.
+          </p>
+
+        </div>
+
+
+        <div class="service-card searchable">
+
+          <div class="service-icon">
+            💡
+          </div>
+
+          <h3>
+            Digital Solutions
+          </h3>
+
+          <p>
+            Creative technology solutions,
+            digital projects and ideas designed
+            to help you grow.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- COURSES -->
+    <section id="courses">
+
+      <div class="section-title">
+
+        <h2>Learn With AAE</h2>
+
+        <p>
+          Build practical skills through simple,
+          step-by-step lessons.
+        </p>
+
+      </div>
+
+
+      <div class="courses">
+
+
+        <div class="course-card searchable">
+
+          <div class="course-top">
+            🎨
+          </div>
+
+          <div class="course-content">
+
+            <h3>
+              Graphics Design
+            </h3>
+
+            <p>
+              Learn design principles, typography,
+              colours, layouts and practical
+              graphics design techniques.
+            </p>
+
+            <span
+              class="course-link"
+              onclick="openCourse('graphics')">
+
+              Start Course →
+
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="course-card searchable">
+
+          <div class="course-top">
+            🎬
+          </div>
+
+          <div class="course-content">
+
+            <h3>
+              Video Editing
+            </h3>
+
+            <p>
+              Learn video editing, transitions,
+              music, text, effects and
+              professional presentations.
+            </p>
+
+            <span
+              class="course-link"
+              onclick="openCourse('video')">
+
+              Start Course →
+
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="course-card searchable">
+
+          <div class="course-top">
+            💻
+          </div>
+
+          <div class="course-content">
+
+            <h3>
+              Web Development
+            </h3>
+
+            <p>
+              Learn HTML, CSS and JavaScript
+              by building practical websites.
+            </p>
+
+            <span
+              class="course-link"
+              onclick="openCourse('web')">
+
+              Start Course →
+
+            </span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- LESSON -->
+    <section id="lessonSection">
+
+      <div class="lesson-container">
+
+        <div class="lesson-header">
+
+          <h2 id="courseTitle">
+            Course
+          </h2>
+
+          <p id="lessonNumber">
+            Lesson 1
+          </p>
+
+        </div>
+
+
+        <div class="progress-area">
+
+          <div class="progress-info">
+
+            <span>
+              Course Progress
+            </span>
+
+            <span id="progressText">
+              0%
+            </span>
+
+          </div>
+
+          <div class="progress-bar">
+
+            <div
+              class="progress-fill"
+              id="progressFill">
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="lesson-content"
+          id="lessonContent">
+        </div>
+
+
+        <div class="lesson-controls">
+
+          <button
+            class="lesson-btn"
+            id="previousBtn"
+            onclick="previousLesson()">
+
+            ← Previous
+
+          </button>
+
+
+          <button
+            class="lesson-btn"
+            id="nextBtn"
+            onclick="nextLesson()">
+
+            Next →
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+      <div class="about-box">
+
+        <h2>
+          About AAE Creative and Tech
+        </h2>
+
+        <p>
+          AAE Creative and Tech is a creative and
+          technology brand focused on helping
+          individuals and businesses communicate
+          their ideas through professional design,
+          video, animation and digital solutions.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section>
+
+      <div class="cta">
+
+        <h2>
+          Need a Creative Solution?
+        </h2>
+
+        <p>
+          Contact AAE Creative and Tech today.
+        </p>
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/2348080622683"
+          target="_blank">
+
+          💬 Chat on WhatsApp
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-container">
+
+      <div>
+
+        <h3>
+          AAE Creative and Tech
+        </h3>
+
+        <p>
+          Creative design, technology and
+          digital solutions.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#courses">
+          Courses
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Contact
+        </h3>
+
+        <a
+          href="https://wa.me/2348080622683"
+          target="_blank">
+
+          WhatsApp
+
+        </a>
+
+        <p>
+          08080622683
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © <span id="year"></span>
+      AAE Creative and Tech.
+      All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+  <script>
+/* =========================
+   MOBILE MENU
+========================= */
+
+function toggleMenu() {
+
+  const menu =
+    document.getElementById("navMenu");
+
+  menu.classList.toggle("active");
+
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+function showSection(id) {
+
+  const element =
+    document.getElementById(id);
+
+  if (element) {
+
+    element.scrollIntoView({
+      behavior: "smooth"
+    });
+
+  }
+
+  document
+    .getElementById("navMenu")
+    .classList.remove("active");
+
+}
+
+
+/* =========================
+   COURSE DATA
+========================= */
+
+const courses = {
+
+  graphics: {
+
+    title: "Graphics Design Course",
+
+    lessons: [
+
+      {
+        title: "Introduction to Graphics Design",
+
+        text: `
+          <h3>What is Graphics Design?</h3>
+
+          <p>
+            Graphics design is the process of using
+            visual elements such as text, images,
+            shapes, colours and layouts to communicate
+            a message.
+          </p>
+
+          <p>
+            Examples include logos, flyers, posters,
+            business cards, banners and social media
+            designs.
+          </p>
+        `
+      },
+
+      {
+        title: "Design Principles",
+
+        text: `
+          <h3>Important Design Principles</h3>
+
+          <p>
+            Good design uses principles such as
+            alignment, balance, contrast, hierarchy,
+            repetition and spacing.
+          </p>
+
+          <p>
+            These principles help your designs look
+            organized and professional.
+          </p>
+        `
+      },
+
+      {
+        title: "Colour and Typography",
+
+        text: `
+          <h3>Colour & Typography</h3>
+
+          <p>
+            Colours communicate emotions and help
+            create visual identity.
+          </p>
+
+          <p>
+            Typography refers to how text is selected,
+            arranged and presented in a design.
+          </p>
+        `
+      },
+
+      {
+        title: "Creating Your First Design",
+
+        text: `
+          <h3>Practical Project</h3>
+
+          <p>
+            Create a simple promotional flyer.
+          </p>
+
+          <p>
+            Use a clear headline, supporting text,
+            attractive imagery, proper spacing and
+            a strong call-to-action.
+          </p>
+        `
+      }
+
+    ]
+
+  },
+
+
+  video: {
+
+    title: "Video Editing Course",
+
+    lessons: [
+
+      {
+        title: "Introduction to Video Editing",
+
+        text: `
+          <h3>What is Video Editing?</h3>
+
+          <p>
+            Video editing involves arranging and
+            modifying video clips to create a
+            finished visual story.
+          </p>
+        `
+      },
+
+      {
+        title: "Timeline and Clips",
+
+        text: `
+          <h3>Understanding the Timeline</h3>
+
+          <p>
+            The timeline is where video clips,
+            images, audio and other elements are
+            arranged.
+          </p>
+        `
+      },
+
+      {
+        title: "Transitions and Effects",
+
+        text: `
+          <h3>Transitions</h3>
+
+          <p>
+            Transitions control how one clip changes
+            into another.
+          </p>
+
+          <p>
+            Use effects carefully so they support
+            the story rather than distract from it.
+          </p>
+        `
+      },
+
+      {
+        title: "Adding Music and Text",
+
+        text: `
+          <h3>Audio and Text</h3>
+
+          <p>
+            Add appropriate background music,
+            sound effects and readable text.
+          </p>
+        `
+      }
+
+    ]
+
+  },
+
+
+  web: {
+
+    title: "Web Development Course",
+
+    lessons: [
+
+      {
+        title: "Introduction to Web Development",
+
+        text: `
+          <h3>How Websites Work</h3>
+
+          <p>
+            Websites are commonly built using
+            HTML, CSS and JavaScript.
+          </p>
+
+          <p>
+            HTML creates the structure, CSS controls
+            presentation and JavaScript adds
+            interactivity.
+          </p>
+        `
+      },
+
+      {
+        title: "HTML",
+
+        text: `
+          <h3>HTML Basics</h3>
+
+          <p>
+            HTML provides the structure of a webpage
+            using elements such as headings,
+            paragraphs, images, links and buttons.
+          </p>
+        `
+      },
+
+      {
+        title: "CSS",
+
+        text: `
+          <h3>CSS Basics</h3>
+
+          <p>
+            CSS controls colours, spacing,
+            typography, layouts, animations and
+            responsive design.
+          </p>
+        `
+      },
+
+      {
+        title: "JavaScript",
+
+        text: `
+          <h3>JavaScript Basics</h3>
+
+          <p>
+            JavaScript allows a webpage to respond
+            to user actions and perform dynamic
+            operations.
+          </p>
+        `
+      }
+
+    ]
+
+  }
+
+};
+
+
+/* =========================
+   COURSE STATE
+========================= */
+
+let currentCourse = null;
+
+let currentLesson = 0;
+
+
+/* =========================
+   OPEN COURSE
+========================= */
+
+function openCourse(courseName) {
+
+  currentCourse =
+    courses[courseName];
+
+  currentLesson = 0;
+
+  document
+    .getElementById("lessonSection")
+    .style.display = "block";
+
+  document
+    .getElementById("lessonSection")
+    .scrollIntoView({
+      behavior: "smooth"
+    });
+
+  displayLesson();
+
+}
+
+
+/* =========================
+   DISPLAY LESSON
+========================= */
+
+function displayLesson() {
+
+  if (!currentCourse) return;
+
+  const lesson =
+    currentCourse.lessons[currentLesson];
+
+
+  document
+    .getElementById("courseTitle")
+    .textContent =
+    currentCourse.title;
+
+
+  document
+    .getElementById("lessonNumber")
+    .textContent =
+    "Lesson " +
+    (currentLesson + 1) +
+    " of " +
+    currentCourse.lessons.length +
+    " — " +
+    lesson.title;
+
+
+  document
+    .getElementById("lessonContent")
+    .innerHTML =
+    lesson.text;
+
+
+  const total =
+    currentCourse.lessons.length;
+
+
+  let progress = 0;
+
+  if (total > 1) {
+
+    progress =
+      Math.round(
+        (currentLesson /
+        (total - 1)) * 100
+      );
+
+  } else {
+
+    progress = 100;
+
+  }
+
+
+  document
+    .getElementById("progressText")
+    .textContent =
+    progress + "%";
+
+
+  document
+    .getElementById("progressFill")
+    .style.width =
+    progress + "%";
+
+
+  document
+    .getElementById("previousBtn")
+    .disabled =
+    currentLesson === 0;
+
+
+  document
+    .getElementById("nextBtn")
+    .disabled =
+    currentLesson === total - 1;
+
+}
+
+
+/* =========================
+   NEXT LESSON
+========================= */
+
+function nextLesson() {
+
+  if (!currentCourse) return;
+
+  if (
+    currentLesson <
+    currentCourse.lessons.length - 1
+  ) {
+
+    currentLesson++;
+
+    displayLesson();
+
+  }
+
+}
+
+
+/* =========================
+   PREVIOUS LESSON
+========================= */
+
+function previousLesson() {
+
+  if (!currentCourse) return;
+
+  if (currentLesson > 0) {
+
+    currentLesson--;
+
+    displayLesson();
+
+  }
+
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+function searchContent() {
+
+  const input =
+    document
+      .getElementById("searchInput")
+      .value
+      .toLowerCase()
+      .trim();
+
+
+  const items =
+    document.querySelectorAll(
+      ".searchable"
+    );
+
+
+  items.forEach(item => {
+
+    const text =
+      item.textContent.toLowerCase();
+
+
+    if (text.includes(input)) {
+
+      item.style.display = "";
+
+    } else {
+
+      item.style.display = "none";
+
+    }
+
+  });
+
+}
+
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+document
+  .getElementById("year")
+  .textContent =
+  new Date().getFullYear();
+  </script>
+
+</body>
+</html>
